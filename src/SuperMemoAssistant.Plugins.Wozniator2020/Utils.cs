@@ -33,7 +33,7 @@ namespace SuperMemoAssistant.Plugins.Wozniator2020
       // Quote, Author, Url, Title
       var quoteFile = new FilePath(QuoteFileName);
 
-      if (quoteFile.Exists())
+      if (!quoteFile.Exists())
         return null;
 
       try
